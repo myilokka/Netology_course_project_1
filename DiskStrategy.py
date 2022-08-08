@@ -14,8 +14,9 @@ class DiskStrategy:
 
 
 class YandexDiskStrategy(DiskStrategy):
-    def __init__(self):
-        self.token = input('Введите токен для ЯндексДиск: ')
+    def __init__(self, token):
+        # self.token = input('Введите токен для ЯндексДиск: ')
+        self.token = token
         self.url = 'https://cloud-api.yandex.net/v1/disk/resources'
 
     def get_headers(self):
@@ -31,10 +32,10 @@ class YandexDiskStrategy(DiskStrategy):
         logging.info('Папка создана.')
         return res
 
-    def upload_photos(self, owner_id, count):
+    def upload_photos(self, owner_id, count, vk_token):
         self.create_folder()
         logging.info('Загрузка фото на ЯндексДиск началась.')
-        vk = VK()
+        vk = VK(vk_token)
         photos_list = vk.sort_photos(owner_id, count)
         tmp_list = []
         headers = self.get_headers()

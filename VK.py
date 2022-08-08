@@ -1,12 +1,13 @@
 import requests
 import logging
+import json
 
 
 class VK:
-    def __init__(self):
-        self.token = input('Введите токен для ВК: ')
+    def __init__(self, token):
+        self.token = token
 
-    def get_photos(self, owner_id, count):
+    def get_photos(self, owner_id, count=5):
         url = "https://api.vk.com/method/photos.get"
         album = input("Откуда вы хотите получить фото? 1 - из профиля, 2 - фото со стены, 3 - сохраненные фото. Введите цифру: ")
         album_id = 'profile'
@@ -31,7 +32,7 @@ class VK:
     def sort_photos(self, owner_id, count):
         tmp_list = []
         photo_list = []
-        res = self.get_photos(owner_id, count=5)
+        res = self.get_photos(owner_id, count)
         for item in res.json()['response']['items']:
             for j in item['sizes']:
                 if j['type'] == 'w':

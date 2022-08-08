@@ -1,0 +1,19 @@
+19:25:33 - INFO - create_folder: 28 - Папка создается.
+19:25:33 - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+19:25:33 - DEBUG - _make_request: 456 - https://cloud-api.yandex.net:443 "PUT /v1/disk/resources?path=vk_photos HTTP/1.1" 409 253
+19:25:33 - INFO - create_folder: 32 - Папка создана.
+19:25:33 - INFO - upload_photos: 37 - Загрузка фото на ЯндексДиск началась.
+19:25:36 - INFO - get_photos: 20 - Выгрузка фото из Вконтакте началась.
+19:25:36 - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): api.vk.com:443
+19:25:36 - DEBUG - _make_request: 456 - https://api.vk.com:443 "GET /method/photos.get?owner_id=116425917&extended=1&photo_sizes=1&count=4&album_id=profile&access_token=vk1.a.cKbRbK1AYFO-KggJhsej8bYt6apEwcLrAfm-fcMZnWT2O2_OYJAlsthd7DJ5q9n_md2NKwUmRIBfMuISXeIa4P8FyiKAMWB400bnGLlreF-7VZt0f6bHIV_5LGB3UVkLTroEFSF2R2xHBrU_QIUx8orxaiEETdBM1z4rQV0nq6Cx12nUyJ3QAZElPJOQCNQZ&v=5.131 HTTP/1.1" 200 2336
+19:25:36 - INFO - get_photos: 29 - Выгрузка закончена.
+19:25:36 - INFO - sort_photos: 49 - Фото отсортированы.
+19:25:36 - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+19:25:36 - DEBUG - _make_request: 456 - https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=vk_photos%2F157.jpg&url=https%3A%2F%2Fsun9-6.userapi.com%2Fc5126%2Fu116425917%2F-6%2Fx_ba01b515.jpg HTTP/1.1" 202 156
+19:25:36 - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+19:25:37 - DEBUG - _make_request: 456 - https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=vk_photos%2F255.jpg&url=https%3A%2F%2Fsun9-north.userapi.com%2Fsun9-77%2Fs%2Fv1%2Fif2%2FxKTf3zj0xa24mu9YaVLXAz8CnZr21bIlsoSVeXm6gH5Hm--E0HItbIIZXdgBbM6G4mWUlZzWqR0Ec6GcRFRJHhYa.jpg%3Fsize%3D604x403%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
+19:25:37 - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+19:25:37 - DEBUG - _make_request: 456 - https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=vk_photos%2F318.jpg&url=https%3A%2F%2Fsun9-west.userapi.com%2Fsun9-71%2Fs%2Fv1%2Fif1%2F4wbIQ2TnWOnq0PGyMpgfeBlnDXYa7Dfw9ZVYjiTJIkIb2EYwxIfKA7dzztbLzO8va2vYR2d1.jpg%3Fsize%3D604x604%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
+19:25:37 - DEBUG - _new_conn: 1001 - Starting new HTTPS connection (1): cloud-api.yandex.net:443
+19:25:38 - DEBUG - _make_request: 456 - https://cloud-api.yandex.net:443 "POST /v1/disk/resources/upload?path=vk_photos%2F642.jpg&url=https%3A%2F%2Fsun9-north.userapi.com%2Fsun9-82%2Fs%2Fv1%2Fif1%2Fa8Z22ldIw2dVCrY1R0j0EZcTjOcMB9NzRMd-o7u-O7ckUbH7JBHulqNGLnQEmnWziK9fe-Ls.jpg%3Fsize%3D960x1280%26quality%3D96%26type%3Dalbum HTTP/1.1" 202 156
+19:25:38 - INFO - upload_photos: 52 - Загрузка фото на ЯндексДиск закончена.
